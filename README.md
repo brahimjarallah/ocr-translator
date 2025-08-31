@@ -75,7 +75,7 @@ wl-clipboard
 
 fribidi
 
-Install with:
+### Install with:
 ```
 sudo pacman -S tesseract tesseract-data-eng grim slurp translate-shell dunst wl-clipboard fribidi
 ```
