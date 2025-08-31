@@ -18,33 +18,33 @@ Translate any word **directly from the screen** into multiple languages
 
 Clone repo and run installer:
 
-```bash
+```
 git clone https://github.com/brahimjarallah/ocr-translator.git
 cd ocr-translator
 ./install.sh
+```
 
 
-
-⚙️ Hyprland Config
+## ⚙️ Hyprland Config
 
 Add to ~/.config/hypr/hyprland.conf:
-
+```
 bind = SUPER, T, exec, ~/.local/bin/ocr-trans
-
+```
 
 Reload Hyprland:
-
+```
 hyprctl reload
-
+```
 
 Now press SUPER+T, select a word on screen, and enjoy instant translations 🎉
 
-🔧 Configuration
+## 🔧 Configuration
 
 Edit ~/.config/ocr-translator/langs.conf to choose languages:
-
+```
 LANGS="en fr de ar es it ja"
-
+```
 
 en → English
 
@@ -60,7 +60,8 @@ it → Italian
 
 ja → Japanese
 
-🛠 Dependencies
+
+## 🛠 Dependencies
 
 tesseract + language data (e.g. tesseract-data-eng)
 
@@ -75,5 +76,7 @@ wl-clipboard
 fribidi
 
 Install with:
-
+```
 sudo pacman -S tesseract tesseract-data-eng grim slurp translate-shell dunst wl-clipboard fribidi
+```
+
